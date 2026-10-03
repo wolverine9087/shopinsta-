@@ -92,7 +92,7 @@ Create a `.env` file in the `backend` folder:
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-CLIENT_URL=http://localhost:5173
+CLIENT_URL=https://shopinsta-frontend.onrender.com
 
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
@@ -119,7 +119,7 @@ npm install
 Create a `.env` file in the `frontend` folder:
 
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://shopinsta.onrender.com/api
 ```
 
 Start the frontend:
@@ -128,7 +128,7 @@ Start the frontend:
 npm run dev
 ```
 
-Open the local URL displayed by Vite, usually `http://localhost:5173`.
+Open the deployed frontend at https://shopinsta-frontend.onrender.com.
 
 ## 🔑 User Roles
 

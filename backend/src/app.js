@@ -26,7 +26,7 @@ const app = express();
 
 // CORS
 app.use(
-  cors({origin: process.env.CLIENT_URL || "http://localhost:5173",
+  cors({origin: process.env.CLIENT_URL || "https://shopinsta-frontend.onrender.com",
     credentials: true,
   })
 );
