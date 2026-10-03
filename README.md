@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ShopInsta 🛍️
 
 **ShopInsta** is a MERN-stack ecommerce platform inspired by Instagram Reels. It allows sellers to showcase their products through short videos, while customers can explore products, discover independent shops, and place orders.
@@ -193,3 +194,7 @@ B.Tech CSE | MERN Stack Developer
 
 This project is created for learning and portfolio purposes. Add a license if you plan to distribute or reuse it under specific terms.
 
+=======
+# shopinsta-
+ShopInsta is a MERN-stack ecommerce platform inspired by Instagram Reels, where sellers can showcase products through short videos and customers can discover, explore, and shop for their favourite finds. It features product listings, seller accounts, reels, a shopping cart, and Cash on Delivery (COD) orders, with a responsive interface for mobile 
+>>>>>>> 58151e4853f2341f791f943e06be6a89e429381f
