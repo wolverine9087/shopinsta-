@@ -60,6 +60,9 @@ app.get("/", (req, res) => {
   });
 });
 
+// Browsers may request this conventional path even when no ICO is used.
+app.get("/favicon.ico", (req, res) => res.status(204).end());
+
 // ========================================
 // API ROUTES
 // ========================================
