@@ -459,6 +459,11 @@ function Storefront() {
       body: fields,
     });
 
+    // Registration also starts the user's session; don't make them sign in again.
+    if (endpoint === "/auth/register") {
+      login(data.user);
+    }
+
     if (
       endpoint === "/auth/register" &&
       fields.role === "seller" &&
@@ -478,10 +483,12 @@ function Storefront() {
       }
     }
 
-    login(data.user);
+    if (endpoint !== "/auth/register") {
+      login(data.user);
+    }
 
     navigate(
-      fields.role === "seller"
+      data.user?.role === "seller"
         ? "/seller"
         : "/"
     );
