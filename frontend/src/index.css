@@ -1,0 +1,41 @@
+:root {
+  font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+  color: #272923;
+  background: #fbfaf7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; min-width: 280px; overflow-x: clip; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; touch-action: manipulation; }
+img, video { max-width: 100%; }
+input, select, textarea { max-width: 100%; }
+::selection { background: #dce3d7; color: #293c33; }
+.reels-mobile-height { height: calc(100dvh - 162px - env(safe-area-inset-bottom)); }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.app-toast { bottom: calc(72px + env(safe-area-inset-bottom)); }
+
+@media (max-width: 360px) {
+  :root { font-size: 15px; }
+  html { scroll-padding-top: 68px; }
+}
+
+@media (max-width: 767px) {
+  input, select, textarea { font-size: 16px; }
+  button { min-height: 40px; }
+}
+
+@media (min-width: 1280px) {
+  html { scroll-padding-top: 100px; }
+}
+
+@media (min-width: 640px) {
+  .reels-mobile-height { height: auto; }
+  .app-toast { bottom: 1.5rem; }
+}
