@@ -1,7 +1,10 @@
 const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
   "http://localhost:5000";
-const API_URL = `${API_BASE_URL.replace(/\/$/, "")}/api`;
+const normalizedApiBase = API_BASE_URL.replace(/\/+$/, "");
+const API_URL = normalizedApiBase.endsWith("/api")
+  ? normalizedApiBase
+  : `${normalizedApiBase}/api`;
 
 export async function api(path, options = {}) {
   const isFormData =

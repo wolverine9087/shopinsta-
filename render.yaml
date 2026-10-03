@@ -14,10 +14,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: CLIENT_URL
-        fromService:
-          type: web
-          name: shopinsta-web
-          envVarKey: RENDER_EXTERNAL_URL
+        value: https://shopinsta-frontend.onrender.com
       - key: CLOUDINARY_CLOUD_NAME
         sync: false
       - key: CLOUDINARY_API_KEY
@@ -33,10 +30,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: shopinsta-api
-          envVarKey: RENDER_EXTERNAL_URL
+        value: https://shopinsta.onrender.com/api
     routes:
       - type: rewrite
         source: /*
